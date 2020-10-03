@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+{% load filter_extras %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>basic page</title>
+        <link rel="stylesheet" href="{%static "css/basic.css" %}">
+    </head>
+    <body>
+        <nav class="nvbar" >
+            <ul class='mn'>
+                <a class="brn" href="#"><img class="logo"src="{% static "images/SKETCH_WINGS.PNG" %}"></a>
+                <li><a href="{%url 'index'%}">Index</a></li>
+                <li><a href="{%url 'basic_app:another'%}">Go to another</a></li>
+                <li><a href="{%url 'basic_app:page1'%}">Go to Page 1</a></li>
+                <li><a href="{%url 'admin:index'%}">admin settings</a></li>
+                <li><a href="{%url 'basic_app:user'%}">Register module</a></li>
+            </ul>
+        </nav>
+        <div class="jmbtrn">
+           <!-- <h3>Phrase of the web here!!</h3>-->
+           <h3>{{phrase | upper }}</h3>
+        </div>
+        {%block body_block %}
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends "basic_app/basic.html"%}
+{% block body_block%}
+<form method="POST">
+    {{user.as_p}}
+    {% csrf_token %}
+    <input type="submit" class='btn_1' value="Submit me">
+</form>
+{%endblock%}

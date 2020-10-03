@@ -1,0 +1,44 @@
+.nvbar{
+    border: 1px solid gainsboro;
+    background:gainsboro;
+    height: 150px;
+    margin:auto;
+    padding-right: 1px;
+}
+.mn li{
+    border:1px solid white;
+    border-radius: 30%;
+    display: inline;
+    padding-left:2em ;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-top: 1.5em;
+    margin: auto;
+}
+
+.mn a{
+    text-decoration: none;
+    vertical-align: middle;
+    color:gray;
+
+}
+
+body h1,p,h2{
+    padding-left: 3em;
+    padding-right: 3em;
+    text-justify: auto;
+    text-align: justify;
+}
+
+.jmbtrn{
+    padding:15px 1em 1px 3em;
+    margin: 1%;
+    color: greenyellow;
+}
+
+.logo{
+    padding-left: 0px;
+    border-radius: 30%;
+    image-orientation: flip;
+    height: 100px;
+}
